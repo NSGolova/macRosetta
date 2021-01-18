@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B955F29025B4A9730096A1AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B955F28F25B4A9730096A1AB /* AppDelegate.swift */; };
+		B955F29225B4A9730096A1AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B955F29125B4A9730096A1AB /* ViewController.swift */; };
+		B955F29425B4A9750096A1AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B955F29325B4A9750096A1AB /* Assets.xcassets */; };
+		B955F29725B4A9750096A1AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B955F29525B4A9750096A1AB /* Main.storyboard */; };
+		B955F2A325B4A9950096A1AB /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B955F2A225B4A9950096A1AB /* MyObject.m */; };
+		B955F2A625B4AA840096A1AB /* MyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B955F2A525B4AA840096A1AB /* MyObject.swift */; };
+		B955F2CC25B57B730096A1AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B955F2CB25B57B730096A1AB /* AppDelegate.swift */; };
+		B955F2CE25B57B730096A1AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B955F2CD25B57B730096A1AB /* ViewController.swift */; };
+		B955F2D025B57B740096A1AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B955F2CF25B57B740096A1AB /* Assets.xcassets */; };
+		B955F2D325B57B740096A1AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B955F2D125B57B740096A1AB /* Main.storyboard */; };
+		B9FD2A7625B5D9E9006A31AE /* ContactsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2A7525B5D9E9006A31AE /* ContactsList.swift */; };
+		B9FD2A7A25B5DA07006A31AE /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2A7925B5DA07006A31AE /* Contact.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B955F28C25B4A9730096A1AB /* AncientMagic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AncientMagic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B955F28F25B4A9730096A1AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B955F29125B4A9730096A1AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B955F29325B4A9750096A1AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B955F29625B4A9750096A1AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B955F29825B4A9750096A1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B955F29925B4A9750096A1AB /* AncientMagic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AncientMagic.entitlements; sourceTree = "<group>"; };
+		B955F2A025B4A9950096A1AB /* AncientMagic-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AncientMagic-Bridging-Header.h"; sourceTree = "<group>"; };
+		B955F2A125B4A9950096A1AB /* MyObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyObject.h; sourceTree = "<group>"; };
+		B955F2A225B4A9950096A1AB /* MyObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyObject.m; sourceTree = "<group>"; };
+		B955F2A525B4AA840096A1AB /* MyObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyObject.swift; sourceTree = "<group>"; };
+		B955F2C925B57B730096A1AB /* MagleTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagleTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B955F2CB25B57B730096A1AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B955F2CD25B57B730096A1AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B955F2CF25B57B740096A1AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B955F2D225B57B740096A1AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B955F2D425B57B740096A1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B955F2D525B57B750096A1AB /* MagleTech.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MagleTech.entitlements; sourceTree = "<group>"; };
+		B9FD2A7525B5D9E9006A31AE /* ContactsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsList.swift; sourceTree = "<group>"; };
+		B9FD2A7925B5DA07006A31AE /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B955F28925B4A9730096A1AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B955F2C625B57B730096A1AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B955F28325B4A9730096A1AB = {
+			isa = PBXGroup;
+			children = (
+				B955F28E25B4A9730096A1AB /* AncientMagic */,
+				B955F2CA25B57B730096A1AB /* MagleTech */,
+				B955F28D25B4A9730096A1AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B955F28D25B4A9730096A1AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B955F28C25B4A9730096A1AB /* AncientMagic.app */,
+				B955F2C925B57B730096A1AB /* MagleTech.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B955F28E25B4A9730096A1AB /* AncientMagic */ = {
+			isa = PBXGroup;
+			children = (
+				B955F28F25B4A9730096A1AB /* AppDelegate.swift */,
+				B955F29125B4A9730096A1AB /* ViewController.swift */,
+				B955F29325B4A9750096A1AB /* Assets.xcassets */,
+				B955F29525B4A9750096A1AB /* Main.storyboard */,
+				B9FD2A7525B5D9E9006A31AE /* ContactsList.swift */,
+				B9FD2A7925B5DA07006A31AE /* Contact.swift */,
+				B955F29825B4A9750096A1AB /* Info.plist */,
+				B955F29925B4A9750096A1AB /* AncientMagic.entitlements */,
+				B955F2A025B4A9950096A1AB /* AncientMagic-Bridging-Header.h */,
+				B955F2DB25B57BA90096A1AB /* Samples */,
+			);
+			path = AncientMagic;
+			sourceTree = "<group>";
+		};
+		B955F2CA25B57B730096A1AB /* MagleTech */ = {
+			isa = PBXGroup;
+			children = (
+				B955F2CB25B57B730096A1AB /* AppDelegate.swift */,
+				B955F2CD25B57B730096A1AB /* ViewController.swift */,
+				B955F2CF25B57B740096A1AB /* Assets.xcassets */,
+				B955F2D125B57B740096A1AB /* Main.storyboard */,
+				B955F2D425B57B740096A1AB /* Info.plist */,
+				B955F2D525B57B750096A1AB /* MagleTech.entitlements */,
+			);
+			path = MagleTech;
+			sourceTree = "<group>";
+		};
+		B955F2DB25B57BA90096A1AB /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				B955F2A125B4A9950096A1AB /* MyObject.h */,
+				B955F2A225B4A9950096A1AB /* MyObject.m */,
+				B955F2A525B4AA840096A1AB /* MyObject.swift */,
+			);
+			path = Samples;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B955F28B25B4A9730096A1AB /* AncientMagic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B955F29C25B4A9750096A1AB /* Build configuration list for PBXNativeTarget "AncientMagic" */;
+			buildPhases = (
+				B955F28825B4A9730096A1AB /* Sources */,
+				B955F28925B4A9730096A1AB /* Frameworks */,
+				B955F28A25B4A9730096A1AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AncientMagic;
+			productName = AncientMagic;
+			productReference = B955F28C25B4A9730096A1AB /* AncientMagic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B955F2C825B57B730096A1AB /* MagleTech */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B955F2D625B57B750096A1AB /* Build configuration list for PBXNativeTarget "MagleTech" */;
+			buildPhases = (
+				B955F2C525B57B730096A1AB /* Sources */,
+				B955F2C625B57B730096A1AB /* Frameworks */,
+				B955F2C725B57B730096A1AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagleTech;
+			productName = MagleTech;
+			productReference = B955F2C925B57B730096A1AB /* MagleTech.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B955F28425B4A9730096A1AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					B955F28B25B4A9730096A1AB = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+					};
+					B955F2C825B57B730096A1AB = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = B955F28725B4A9730096A1AB /* Build configuration list for PBXProject "AncientMagic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B955F28325B4A9730096A1AB;
+			productRefGroup = B955F28D25B4A9730096A1AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B955F28B25B4A9730096A1AB /* AncientMagic */,
+				B955F2C825B57B730096A1AB /* MagleTech */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B955F28A25B4A9730096A1AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B955F29425B4A9750096A1AB /* Assets.xcassets in Resources */,
+				B955F29725B4A9750096A1AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B955F2C725B57B730096A1AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B955F2D025B57B740096A1AB /* Assets.xcassets in Resources */,
+				B955F2D325B57B740096A1AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B955F28825B4A9730096A1AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9FD2A7A25B5DA07006A31AE /* Contact.swift in Sources */,
+				B9FD2A7625B5D9E9006A31AE /* ContactsList.swift in Sources */,
+				B955F29225B4A9730096A1AB /* ViewController.swift in Sources */,
+				B955F29025B4A9730096A1AB /* AppDelegate.swift in Sources */,
+				B955F2A625B4AA840096A1AB /* MyObject.swift in Sources */,
+				B955F2A325B4A9950096A1AB /* MyObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B955F2C525B57B730096A1AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B955F2CE25B57B730096A1AB /* ViewController.swift in Sources */,
+				B955F2CC25B57B730096A1AB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B955F29525B4A9750096A1AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B955F29625B4A9750096A1AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B955F2D125B57B740096A1AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B955F2D225B57B740096A1AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B955F29A25B4A9750096A1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B955F29B25B4A9750096A1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B955F29D25B4A9750096A1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AncientMagic/AncientMagic.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 235885SBVV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = AncientMagic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.golova.AncientMagic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AncientMagic/AncientMagic-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B955F29E25B4A9750096A1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AncientMagic/AncientMagic.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 235885SBVV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = AncientMagic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.golova.AncientMagic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AncientMagic/AncientMagic-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B955F2D725B57B750096A1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MagleTech/MagleTech.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 235885SBVV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = MagleTech/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.golova.MagleTech;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B955F2D825B57B750096A1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MagleTech/MagleTech.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 235885SBVV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = MagleTech/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.golova.MagleTech;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B955F28725B4A9730096A1AB /* Build configuration list for PBXProject "AncientMagic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B955F29A25B4A9750096A1AB /* Debug */,
+				B955F29B25B4A9750096A1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B955F29C25B4A9750096A1AB /* Build configuration list for PBXNativeTarget "AncientMagic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B955F29D25B4A9750096A1AB /* Debug */,
+				B955F29E25B4A9750096A1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B955F2D625B57B750096A1AB /* Build configuration list for PBXNativeTarget "MagleTech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B955F2D725B57B750096A1AB /* Debug */,
+				B955F2D825B57B750096A1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B955F28425B4A9730096A1AB /* Project object */;
+}
