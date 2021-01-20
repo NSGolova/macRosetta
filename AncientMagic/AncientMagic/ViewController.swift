@@ -13,6 +13,17 @@ class ViewController: NSViewController {
     @objc dynamic var surname: String?
     
     @objc dynamic let list = ContactsList()
+    
+    @IBOutlet var nameField: NSTextField!
+    var contact: Contact? {
+        didSet {
+            contact?.observe(\.name) { [weak self] contact, _ in
+                guard let self = self,
+                      let name = contact.name else { return }
+                self.nameField.stringValue = name
+            }
+        }
+    }
 
     @IBAction func handleNew(_ sender: Any) {
         guard let name = name,

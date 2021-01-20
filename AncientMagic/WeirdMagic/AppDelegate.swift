@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  MagleTech
+//  WeirdMagic
 //
-//  Created by Viktor Radulov on 1/18/21.
+//  Created by Viktor Radulov on 1/20/21.
 //
 
 import Cocoa

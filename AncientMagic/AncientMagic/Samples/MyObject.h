@@ -13,6 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) MyObject *property;
 
+@property (nonatomic, strong) NSString *property1;
+@property (nonatomic, strong) NSString *property2;
+@property (nonatomic, strong, readonly) NSString *property1and2;
+
 @end
 
 @interface MyObjectOwner : NSObject

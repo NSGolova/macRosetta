@@ -19,6 +19,20 @@
 		B955F2D325B57B740096A1AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B955F2D125B57B740096A1AB /* Main.storyboard */; };
 		B9FD2A7625B5D9E9006A31AE /* ContactsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2A7525B5D9E9006A31AE /* ContactsList.swift */; };
 		B9FD2A7A25B5DA07006A31AE /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2A7925B5DA07006A31AE /* Contact.swift */; };
+		B9FD2AD725B810FA006A31AE /* Transformers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2AD625B810FA006A31AE /* Transformers.swift */; };
+		B9FD2AFA25B81DA8006A31AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2AF925B81DA8006A31AE /* AppDelegate.swift */; };
+		B9FD2AFC25B81DA8006A31AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2AFB25B81DA8006A31AE /* ViewController.swift */; };
+		B9FD2AFE25B81DAA006A31AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9FD2AFD25B81DAA006A31AE /* Assets.xcassets */; };
+		B9FD2B0125B81DAA006A31AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9FD2AFF25B81DAA006A31AE /* Main.storyboard */; };
+		B9FD2B3025B8745E006A31AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2B2F25B8745E006A31AE /* AppDelegate.swift */; };
+		B9FD2B3225B8745E006A31AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2B3125B8745E006A31AE /* ContentView.swift */; };
+		B9FD2B3425B8745F006A31AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9FD2B3325B8745F006A31AE /* Assets.xcassets */; };
+		B9FD2B3725B8745F006A31AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9FD2B3625B8745F006A31AE /* Preview Assets.xcassets */; };
+		B9FD2B3A25B8745F006A31AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9FD2B3825B8745F006A31AE /* Main.storyboard */; };
+		B9FD2B4525B87618006A31AE /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2B4425B87618006A31AE /* Contact.swift */; };
+		B9FD2B4B25B87625006A31AE /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2B4A25B87625006A31AE /* ContactList.swift */; };
+		B9FD2B5125B878B0006A31AE /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2B5025B878B0006A31AE /* ContactView.swift */; };
+		B9FD2B5F25B87C4F006A31AE /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2B5E25B87C4F006A31AE /* ContactListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,15 +47,35 @@
 		B955F2A125B4A9950096A1AB /* MyObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyObject.h; sourceTree = "<group>"; };
 		B955F2A225B4A9950096A1AB /* MyObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyObject.m; sourceTree = "<group>"; };
 		B955F2A525B4AA840096A1AB /* MyObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyObject.swift; sourceTree = "<group>"; };
-		B955F2C925B57B730096A1AB /* MagleTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagleTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B955F2C925B57B730096A1AB /* MuggleTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuggleTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B955F2CB25B57B730096A1AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B955F2CD25B57B730096A1AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B955F2CF25B57B740096A1AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B955F2D225B57B740096A1AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B955F2D425B57B740096A1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B955F2D525B57B750096A1AB /* MagleTech.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MagleTech.entitlements; sourceTree = "<group>"; };
+		B955F2D525B57B750096A1AB /* MuggleTech.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MuggleTech.entitlements; sourceTree = "<group>"; };
 		B9FD2A7525B5D9E9006A31AE /* ContactsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsList.swift; sourceTree = "<group>"; };
 		B9FD2A7925B5DA07006A31AE /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		B9FD2AD625B810FA006A31AE /* Transformers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transformers.swift; sourceTree = "<group>"; };
+		B9FD2AF725B81DA8006A31AE /* WeirdMagic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeirdMagic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9FD2AF925B81DA8006A31AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B9FD2AFB25B81DA8006A31AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B9FD2AFD25B81DAA006A31AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9FD2B0025B81DAA006A31AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9FD2B0225B81DAA006A31AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9FD2B0325B81DAA006A31AE /* WeirdMagic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeirdMagic.entitlements; sourceTree = "<group>"; };
+		B9FD2B2D25B8745E006A31AE /* PostmodernTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostmodernTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9FD2B2F25B8745E006A31AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B9FD2B3125B8745E006A31AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B9FD2B3325B8745F006A31AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9FD2B3625B8745F006A31AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B9FD2B3925B8745F006A31AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9FD2B3B25B8745F006A31AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9FD2B3C25B8745F006A31AE /* PostmodernTech.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PostmodernTech.entitlements; sourceTree = "<group>"; };
+		B9FD2B4425B87618006A31AE /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		B9FD2B4A25B87625006A31AE /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
+		B9FD2B5025B878B0006A31AE /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		B9FD2B5E25B87C4F006A31AE /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +93,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B9FD2AF425B81DA8006A31AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9FD2B2A25B8745E006A31AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -66,7 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				B955F28E25B4A9730096A1AB /* AncientMagic */,
-				B955F2CA25B57B730096A1AB /* MagleTech */,
+				B955F2CA25B57B730096A1AB /* MuggleTech */,
+				B9FD2AF825B81DA8006A31AE /* WeirdMagic */,
+				B9FD2B2E25B8745E006A31AE /* PostmodernTech */,
 				B955F28D25B4A9730096A1AB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,7 +125,9 @@
 			isa = PBXGroup;
 			children = (
 				B955F28C25B4A9730096A1AB /* AncientMagic.app */,
-				B955F2C925B57B730096A1AB /* MagleTech.app */,
+				B955F2C925B57B730096A1AB /* MuggleTech.app */,
+				B9FD2AF725B81DA8006A31AE /* WeirdMagic.app */,
+				B9FD2B2D25B8745E006A31AE /* PostmodernTech.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +141,7 @@
 				B955F29525B4A9750096A1AB /* Main.storyboard */,
 				B9FD2A7525B5D9E9006A31AE /* ContactsList.swift */,
 				B9FD2A7925B5DA07006A31AE /* Contact.swift */,
+				B9FD2AD625B810FA006A31AE /* Transformers.swift */,
 				B955F29825B4A9750096A1AB /* Info.plist */,
 				B955F29925B4A9750096A1AB /* AncientMagic.entitlements */,
 				B955F2A025B4A9950096A1AB /* AncientMagic-Bridging-Header.h */,
@@ -97,7 +150,7 @@
 			path = AncientMagic;
 			sourceTree = "<group>";
 		};
-		B955F2CA25B57B730096A1AB /* MagleTech */ = {
+		B955F2CA25B57B730096A1AB /* MuggleTech */ = {
 			isa = PBXGroup;
 			children = (
 				B955F2CB25B57B730096A1AB /* AppDelegate.swift */,
@@ -105,9 +158,9 @@
 				B955F2CF25B57B740096A1AB /* Assets.xcassets */,
 				B955F2D125B57B740096A1AB /* Main.storyboard */,
 				B955F2D425B57B740096A1AB /* Info.plist */,
-				B955F2D525B57B750096A1AB /* MagleTech.entitlements */,
+				B955F2D525B57B750096A1AB /* MuggleTech.entitlements */,
 			);
-			path = MagleTech;
+			path = MuggleTech;
 			sourceTree = "<group>";
 		};
 		B955F2DB25B57BA90096A1AB /* Samples */ = {
@@ -118,6 +171,45 @@
 				B955F2A525B4AA840096A1AB /* MyObject.swift */,
 			);
 			path = Samples;
+			sourceTree = "<group>";
+		};
+		B9FD2AF825B81DA8006A31AE /* WeirdMagic */ = {
+			isa = PBXGroup;
+			children = (
+				B9FD2AF925B81DA8006A31AE /* AppDelegate.swift */,
+				B9FD2AFB25B81DA8006A31AE /* ViewController.swift */,
+				B9FD2AFD25B81DAA006A31AE /* Assets.xcassets */,
+				B9FD2AFF25B81DAA006A31AE /* Main.storyboard */,
+				B9FD2B0225B81DAA006A31AE /* Info.plist */,
+				B9FD2B0325B81DAA006A31AE /* WeirdMagic.entitlements */,
+			);
+			path = WeirdMagic;
+			sourceTree = "<group>";
+		};
+		B9FD2B2E25B8745E006A31AE /* PostmodernTech */ = {
+			isa = PBXGroup;
+			children = (
+				B9FD2B2F25B8745E006A31AE /* AppDelegate.swift */,
+				B9FD2B3125B8745E006A31AE /* ContentView.swift */,
+				B9FD2B5E25B87C4F006A31AE /* ContactListView.swift */,
+				B9FD2B5025B878B0006A31AE /* ContactView.swift */,
+				B9FD2B4A25B87625006A31AE /* ContactList.swift */,
+				B9FD2B4425B87618006A31AE /* Contact.swift */,
+				B9FD2B3325B8745F006A31AE /* Assets.xcassets */,
+				B9FD2B3825B8745F006A31AE /* Main.storyboard */,
+				B9FD2B3B25B8745F006A31AE /* Info.plist */,
+				B9FD2B3C25B8745F006A31AE /* PostmodernTech.entitlements */,
+				B9FD2B3525B8745F006A31AE /* Preview Content */,
+			);
+			path = PostmodernTech;
+			sourceTree = "<group>";
+		};
+		B9FD2B3525B8745F006A31AE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B9FD2B3625B8745F006A31AE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +232,9 @@
 			productReference = B955F28C25B4A9730096A1AB /* AncientMagic.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B955F2C825B57B730096A1AB /* MagleTech */ = {
+		B955F2C825B57B730096A1AB /* MuggleTech */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B955F2D625B57B750096A1AB /* Build configuration list for PBXNativeTarget "MagleTech" */;
+			buildConfigurationList = B955F2D625B57B750096A1AB /* Build configuration list for PBXNativeTarget "MuggleTech" */;
 			buildPhases = (
 				B955F2C525B57B730096A1AB /* Sources */,
 				B955F2C625B57B730096A1AB /* Frameworks */,
@@ -152,9 +244,43 @@
 			);
 			dependencies = (
 			);
-			name = MagleTech;
+			name = MuggleTech;
 			productName = MagleTech;
-			productReference = B955F2C925B57B730096A1AB /* MagleTech.app */;
+			productReference = B955F2C925B57B730096A1AB /* MuggleTech.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9FD2AF625B81DA8006A31AE /* WeirdMagic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9FD2B0425B81DAA006A31AE /* Build configuration list for PBXNativeTarget "WeirdMagic" */;
+			buildPhases = (
+				B9FD2AF325B81DA8006A31AE /* Sources */,
+				B9FD2AF425B81DA8006A31AE /* Frameworks */,
+				B9FD2AF525B81DA8006A31AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeirdMagic;
+			productName = WeirdMagic;
+			productReference = B9FD2AF725B81DA8006A31AE /* WeirdMagic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9FD2B2C25B8745E006A31AE /* PostmodernTech */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9FD2B3D25B8745F006A31AE /* Build configuration list for PBXNativeTarget "PostmodernTech" */;
+			buildPhases = (
+				B9FD2B2925B8745E006A31AE /* Sources */,
+				B9FD2B2A25B8745E006A31AE /* Frameworks */,
+				B9FD2B2B25B8745E006A31AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PostmodernTech;
+			productName = PostmodernTech;
+			productReference = B9FD2B2D25B8745E006A31AE /* PostmodernTech.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -173,6 +299,12 @@
 					B955F2C825B57B730096A1AB = {
 						CreatedOnToolsVersion = 12.3;
 					};
+					B9FD2AF625B81DA8006A31AE = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					B9FD2B2C25B8745E006A31AE = {
+						CreatedOnToolsVersion = 12.3;
+					};
 				};
 			};
 			buildConfigurationList = B955F28725B4A9730096A1AB /* Build configuration list for PBXProject "AncientMagic" */;
@@ -189,7 +321,9 @@
 			projectRoot = "";
 			targets = (
 				B955F28B25B4A9730096A1AB /* AncientMagic */,
-				B955F2C825B57B730096A1AB /* MagleTech */,
+				B955F2C825B57B730096A1AB /* MuggleTech */,
+				B9FD2AF625B81DA8006A31AE /* WeirdMagic */,
+				B9FD2B2C25B8745E006A31AE /* PostmodernTech */,
 			);
 		};
 /* End PBXProject section */
@@ -213,6 +347,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B9FD2AF525B81DA8006A31AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9FD2AFE25B81DAA006A31AE /* Assets.xcassets in Resources */,
+				B9FD2B0125B81DAA006A31AE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9FD2B2B25B8745E006A31AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9FD2B3A25B8745F006A31AE /* Main.storyboard in Resources */,
+				B9FD2B3725B8745F006A31AE /* Preview Assets.xcassets in Resources */,
+				B9FD2B3425B8745F006A31AE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -220,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9FD2AD725B810FA006A31AE /* Transformers.swift in Sources */,
 				B9FD2A7A25B5DA07006A31AE /* Contact.swift in Sources */,
 				B9FD2A7625B5D9E9006A31AE /* ContactsList.swift in Sources */,
 				B955F29225B4A9730096A1AB /* ViewController.swift in Sources */,
@@ -238,6 +392,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B9FD2AF325B81DA8006A31AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9FD2AFC25B81DA8006A31AE /* ViewController.swift in Sources */,
+				B9FD2AFA25B81DA8006A31AE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9FD2B2925B8745E006A31AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9FD2B4B25B87625006A31AE /* ContactList.swift in Sources */,
+				B9FD2B4525B87618006A31AE /* Contact.swift in Sources */,
+				B9FD2B3225B8745E006A31AE /* ContentView.swift in Sources */,
+				B9FD2B5F25B87C4F006A31AE /* ContactListView.swift in Sources */,
+				B9FD2B5125B878B0006A31AE /* ContactView.swift in Sources */,
+				B9FD2B3025B8745E006A31AE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -253,6 +429,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				B955F2D225B57B740096A1AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B9FD2AFF25B81DAA006A31AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9FD2B0025B81DAA006A31AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B9FD2B3825B8745F006A31AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9FD2B3925B8745F006A31AE /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -437,7 +629,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.golova.MagleTech;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.golova.MuggleTech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -458,7 +650,97 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.golova.MagleTech;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.golova.MuggleTech;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B9FD2B0525B81DAA006A31AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WeirdMagic/WeirdMagic.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KMC5NA9YG7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = WeirdMagic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.golova.WeirdMagic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B9FD2B0625B81DAA006A31AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WeirdMagic/WeirdMagic.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KMC5NA9YG7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = WeirdMagic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.golova.WeirdMagic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B9FD2B3E25B8745F006A31AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PostmodernTech/PostmodernTech.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"PostmodernTech/Preview Content\"";
+				DEVELOPMENT_TEAM = KMC5NA9YG7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PostmodernTech/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.golova.PostmodernTech;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B9FD2B3F25B8745F006A31AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PostmodernTech/PostmodernTech.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"PostmodernTech/Preview Content\"";
+				DEVELOPMENT_TEAM = KMC5NA9YG7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PostmodernTech/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.golova.PostmodernTech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -485,11 +767,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B955F2D625B57B750096A1AB /* Build configuration list for PBXNativeTarget "MagleTech" */ = {
+		B955F2D625B57B750096A1AB /* Build configuration list for PBXNativeTarget "MuggleTech" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B955F2D725B57B750096A1AB /* Debug */,
 				B955F2D825B57B750096A1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9FD2B0425B81DAA006A31AE /* Build configuration list for PBXNativeTarget "WeirdMagic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9FD2B0525B81DAA006A31AE /* Debug */,
+				B9FD2B0625B81DAA006A31AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9FD2B3D25B8745F006A31AE /* Build configuration list for PBXNativeTarget "PostmodernTech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9FD2B3E25B8745F006A31AE /* Debug */,
+				B9FD2B3F25B8745F006A31AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -9,6 +9,14 @@
 
 @implementation MyObject
 
+- (NSString *)property1and2 {
+    return [self.property1 stringByAppendingString:self.property2];
+}
+
++ (NSSet<NSString *> *)keyPathsForValuesAffectingProperty1and2 {
+    return [NSSet setWithObjects:@"property1", @"property2", nil];
+}
+
 @end
 
 static const char kAMMyBelowedClassOwnerMyObjectPropertyKVOContext = 0;

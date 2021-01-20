@@ -1,18 +1,17 @@
 //
 //  Contact.swift
-//  AncientMagic
+//  PostmodernTech
 //
-//  Created by Viktor Radulov on 1/18/21.
+//  Created by Viktor Radulov on 1/20/21.
 //
 
 import Foundation
 
-class Contact: NSObject {
+class Contact: Equatable, Identifiable, Hashable {
+    var name: String?
+    var surname: String?
     
-    @objc dynamic var name: String?
-    @objc dynamic var surname: String?
-    
-    @objc dynamic var fullname: String? {
+    var fullname: String? {
         guard let name = name,
               let surname = surname else {
             return nil
@@ -20,20 +19,19 @@ class Contact: NSObject {
         return name + " " + surname
     }
     
-    @objc class func keyPathsForValuesAffectingFullname() -> Set<String> {
-        [#keyPath(name), #keyPath(surname)]
-    }
-    
-    @objc dynamic var online = false
+    var online = false
     
     init(name: String, surname: String) {
         self.name = name
         self.surname = surname
-        super.init()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + Double(arc4random_uniform(200))) { [weak self] in
             self?.toggleOnline()
         }
+    }
+    
+    static func == (lhs: Contact, rhs: Contact) -> Bool {
+        lhs.fullname == rhs.fullname
     }
     
     func toggleOnline() {
@@ -41,5 +39,9 @@ class Contact: NSObject {
         DispatchQueue.main.asyncAfter(deadline: .now() + Double(arc4random_uniform(200))) { [weak self] in
             self?.toggleOnline()
         }
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(surname)
     }
 }
