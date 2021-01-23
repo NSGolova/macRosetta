@@ -14,15 +14,21 @@ class ViewController: NSViewController {
     
     @objc dynamic let list = ContactsList()
     
-    @IBOutlet var nameField: NSTextField!
-    var contact: Contact? {
-        didSet {
-            contact?.observe(\.name) { [weak self] contact, _ in
-                guard let self = self,
-                      let name = contact.name else { return }
-                self.nameField.stringValue = name
-            }
-        }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let alex = Contact(name: "Alex", surname: "Testarini")
+        alex.add(access: AccessWay(type: .mail, value: "alex@yopmail.com"))
+        alex.add(access: AccessWay(type: .phone, value: "123-4567"))
+        
+        list.add(contact: alex)
+        
+        let john = Contact(name: "John", surname: "Samplov")
+        john.add(access: AccessWay(type: .mail, value: "john@yopmail.com"))
+        john.add(access: AccessWay(type: .telegram, value: "123-4567"))
+        john.add(access: AccessWay(type: .website, value: "https://samlov.org"))
+        
+        list.add(contact: john)
     }
 
     @IBAction func handleNew(_ sender: Any) {

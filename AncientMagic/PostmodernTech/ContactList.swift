@@ -7,9 +7,9 @@
 
 import Foundation
 
-class ContactsList {
-    var contacts = [Contact(name: "Alex", surname: "Testarini"),
-                                  Contact(name: "John", surname: "Samplov")]
+class ContactsList: ObservableObject {
+    @Published var contacts = [Contact(name: "Alex", surname: "Testarini"),
+                               Contact(name: "John", surname: "Samplov")]
     
     func add(contact: Contact) {
         contacts.append(contact)

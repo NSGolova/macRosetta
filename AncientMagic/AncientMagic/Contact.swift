@@ -24,7 +24,8 @@ class Contact: NSObject {
         [#keyPath(name), #keyPath(surname)]
     }
     
-    @objc dynamic var online = false
+    @objc dynamic private(set) var online = false
+    @objc dynamic private(set) var accesses = [AccessWay]()
     
     init(name: String, surname: String) {
         self.name = name
@@ -36,7 +37,17 @@ class Contact: NSObject {
         }
     }
     
-    func toggleOnline() {
+    func add(access: AccessWay) {
+        guard !accesses.contains(access) else { return }
+        
+        accesses.append(access)
+    }
+    
+    func remove(access: AccessWay) {
+        accesses.removeAll { $0 == access }
+    }
+    
+    private func toggleOnline() {
         online.toggle()
         DispatchQueue.main.asyncAfter(deadline: .now() + Double(arc4random_uniform(200))) { [weak self] in
             self?.toggleOnline()

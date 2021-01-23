@@ -7,9 +7,9 @@
 
 import Foundation
 
-class Contact: Equatable, Identifiable, Hashable {
-    var name: String?
-    var surname: String?
+class Contact: Equatable, Identifiable, Hashable, ObservableObject {
+    @Published var name: String?
+    @Published var surname: String?
     
     var fullname: String? {
         guard let name = name,
@@ -19,7 +19,7 @@ class Contact: Equatable, Identifiable, Hashable {
         return name + " " + surname
     }
     
-    var online = false
+    @Published var online = false
     
     init(name: String, surname: String) {
         self.name = name

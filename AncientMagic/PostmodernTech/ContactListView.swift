@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContactsListView: View {
-    let list = ContactsList()
+    @ObservedObject var list = ContactsList()
     @State var selectedContact = Set<Contact>()
     
     @State private var name: String = "" {
@@ -31,20 +31,29 @@ struct ContactsListView: View {
                 VStack {
                     TextField("name", text: $newName)
                     TextField("surname", text: $newSurname)
-                }
+                }.padding(.all).frame(width: 350.0)
+                
+                Button(action: {
+                       list.add(contact: Contact(name: newName, surname: newSurname))
+                   }) {
+                    Text("Add new")
+                }.padding(.leading).frame(width: 50.0)
+                Spacer()
             }
             HStack {
-//                NavigationView {
-                    List(list.contacts, id: \.self, selection: $selectedContact) { contact in
-                        ContactView(contact: contact)
-                    }
-//                }
+                List(list.contacts, id: \.self, selection: $selectedContact) { contact in
+                    ContactView(contact: contact)
+                }
                 VStack {
                     Text(selectedContact.first?.fullname ?? "")
                         .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                         .multilineTextAlignment(.center)
+                    Form {
                     TextField( selectedContact.first?.name ?? "", text: $name)
                     TextField(selectedContact.first?.surname ?? "", text: $surname)
+                    
+                        
+                    }
                 }
             }
             

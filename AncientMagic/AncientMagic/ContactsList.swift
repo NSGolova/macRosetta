@@ -8,15 +8,15 @@
 import Foundation
 
 class ContactsList: NSObject {
-    @objc dynamic var contacts = [Contact(name: "Alex", surname: "Testarini"),
-                                  Contact(name: "John", surname: "Samplov")]
+    @objc dynamic private(set) var contacts = [Contact]()
     
     func add(contact: Contact) {
+        guard !contacts.contains(contact) else { return }
+        
         contacts.append(contact)
     }
     
     func remove(contact: Contact) {
         contacts.removeAll { $0 == contact }
     }
-    
 }

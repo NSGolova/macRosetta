@@ -9,16 +9,19 @@ import SwiftUI
 
 struct ContactView: View {
     
-    var contact: Contact
+    @ObservedObject var contact: Contact
 
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(contact.name ?? "No name")
-                .multilineTextAlignment(.leading)
-            Text(contact.surname ?? "")
-                .multilineTextAlignment(.leading)
-
+        HStack {
+            VStack(alignment: .leading) {
+                Text(contact.name ?? "No name")
+                    .multilineTextAlignment(.leading)
+                Text(contact.surname ?? "")
+                    .multilineTextAlignment(.leading)
+            }
             Spacer()
+            Circle()
+                .frame(width: 8.0, height: 8.0).foregroundColor(contact.online ? .green : .red)
         }
     }
 }

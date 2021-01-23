@@ -33,6 +33,7 @@
 		B9FD2B4B25B87625006A31AE /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2B4A25B87625006A31AE /* ContactList.swift */; };
 		B9FD2B5125B878B0006A31AE /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2B5025B878B0006A31AE /* ContactView.swift */; };
 		B9FD2B5F25B87C4F006A31AE /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2B5E25B87C4F006A31AE /* ContactListView.swift */; };
+		B9FD2BC525BC3D81006A31AE /* AccessWays.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2BC425BC3D81006A31AE /* AccessWays.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		B9FD2B4A25B87625006A31AE /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
 		B9FD2B5025B878B0006A31AE /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		B9FD2B5E25B87C4F006A31AE /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
+		B9FD2BC425BC3D81006A31AE /* AccessWays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessWays.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				B955F29525B4A9750096A1AB /* Main.storyboard */,
 				B9FD2A7525B5D9E9006A31AE /* ContactsList.swift */,
 				B9FD2A7925B5DA07006A31AE /* Contact.swift */,
+				B9FD2BC425BC3D81006A31AE /* AccessWays.swift */,
 				B9FD2AD625B810FA006A31AE /* Transformers.swift */,
 				B955F29825B4A9750096A1AB /* Info.plist */,
 				B955F29925B4A9750096A1AB /* AncientMagic.entitlements */,
@@ -374,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9FD2AD725B810FA006A31AE /* Transformers.swift in Sources */,
+				B9FD2BC525BC3D81006A31AE /* AccessWays.swift in Sources */,
 				B9FD2A7A25B5DA07006A31AE /* Contact.swift in Sources */,
 				B9FD2A7625B5D9E9006A31AE /* ContactsList.swift in Sources */,
 				B955F29225B4A9730096A1AB /* ViewController.swift in Sources */,
