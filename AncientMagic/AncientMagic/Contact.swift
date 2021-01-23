@@ -6,26 +6,19 @@
 //
 
 import Foundation
+import KVOMagic
 
-class Contact: NSObject {
+class Contact: ArrayOwner {
     
-    @objc dynamic var name: String?
-    @objc dynamic var surname: String?
+    @objc dynamic var name = ""
+    @objc dynamic var surname = ""
     
-    @objc dynamic var fullname: String? {
-        guard let name = name,
-              let surname = surname else {
-            return nil
-        }
-        return name + " " + surname
-    }
+    @Computed2({ $0 + " " + $1 }, self, \.name, \.surname) @objc dynamic var fullname
     
-    @objc class func keyPathsForValuesAffectingFullname() -> Set<String> {
-        [#keyPath(name), #keyPath(surname)]
-    }
-    
-    @objc dynamic private(set) var online = false
+    @objc dynamic private(set) var online = true
     @objc dynamic private(set) var accesses = [AccessWay]()
+    
+    @Computed({ $0.accesses.map(\.accessCount).reduce(0, +) }, self, .arrayKVO + #keyPath(accesses.accessCount)) @objc dynamic var accessCount
     
     init(name: String, surname: String) {
         self.name = name

@@ -34,7 +34,40 @@
 		B9FD2B5125B878B0006A31AE /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2B5025B878B0006A31AE /* ContactView.swift */; };
 		B9FD2B5F25B87C4F006A31AE /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2B5E25B87C4F006A31AE /* ContactListView.swift */; };
 		B9FD2BC525BC3D81006A31AE /* AccessWays.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2BC425BC3D81006A31AE /* AccessWays.swift */; };
+		B9FD2BE325BC968D006A31AE /* KVOMagic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9FD2BD925BC967D006A31AE /* KVOMagic.framework */; };
+		B9FD2BE425BC968D006A31AE /* KVOMagic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9FD2BD925BC967D006A31AE /* KVOMagic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9FD2BD825BC967D006A31AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9FD2BD325BC967D006A31AE /* KVOMagic.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B9FD2A8D25B70EBE006A31AE;
+			remoteInfo = KVOMagic;
+		};
+		B9FD2BDA25BC967D006A31AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9FD2BD325BC967D006A31AE /* KVOMagic.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B9FD2A9625B70EBE006A31AE;
+			remoteInfo = KVOMagicTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B9FD2BE525BC968D006A31AE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B9FD2BE425BC968D006A31AE /* KVOMagic.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B955F28C25B4A9730096A1AB /* AncientMagic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AncientMagic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +111,7 @@
 		B9FD2B5025B878B0006A31AE /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		B9FD2B5E25B87C4F006A31AE /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
 		B9FD2BC425BC3D81006A31AE /* AccessWays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessWays.swift; sourceTree = "<group>"; };
+		B9FD2BD325BC967D006A31AE /* KVOMagic.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KVOMagic.xcodeproj; path = ../../KVOMagic/KVOMagic/KVOMagic.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9FD2BE325BC968D006A31AE /* KVOMagic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +155,7 @@
 				B9FD2AF825B81DA8006A31AE /* WeirdMagic */,
 				B9FD2B2E25B8745E006A31AE /* PostmodernTech */,
 				B955F28D25B4A9730096A1AB /* Products */,
+				B9FD2BE225BC968D006A31AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +184,7 @@
 				B955F29825B4A9750096A1AB /* Info.plist */,
 				B955F29925B4A9750096A1AB /* AncientMagic.entitlements */,
 				B955F2A025B4A9950096A1AB /* AncientMagic-Bridging-Header.h */,
+				B9FD2BD325BC967D006A31AE /* KVOMagic.xcodeproj */,
 				B955F2DB25B57BA90096A1AB /* Samples */,
 			);
 			path = AncientMagic;
@@ -215,6 +252,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B9FD2BD425BC967D006A31AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9FD2BD925BC967D006A31AE /* KVOMagic.framework */,
+				B9FD2BDB25BC967D006A31AE /* KVOMagicTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9FD2BE225BC968D006A31AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,6 +278,7 @@
 				B955F28825B4A9730096A1AB /* Sources */,
 				B955F28925B4A9730096A1AB /* Frameworks */,
 				B955F28A25B4A9730096A1AB /* Resources */,
+				B9FD2BE525BC968D006A31AE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -321,6 +375,12 @@
 			mainGroup = B955F28325B4A9730096A1AB;
 			productRefGroup = B955F28D25B4A9730096A1AB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B9FD2BD425BC967D006A31AE /* Products */;
+					ProjectRef = B9FD2BD325BC967D006A31AE /* KVOMagic.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B955F28B25B4A9730096A1AB /* AncientMagic */,
@@ -330,6 +390,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B9FD2BD925BC967D006A31AE /* KVOMagic.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KVOMagic.framework;
+			remoteRef = B9FD2BD825BC967D006A31AE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B9FD2BDB25BC967D006A31AE /* KVOMagicTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KVOMagicTests.xctest;
+			remoteRef = B9FD2BDA25BC967D006A31AE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B955F28A25B4A9730096A1AB /* Resources */ = {

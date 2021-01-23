@@ -17,18 +17,6 @@ class AccessWay: NSObject {
     }
     
     @objc dynamic let type: AccessType
-    @objc dynamic var name: String {
-        switch type {
-        case .mail:
-            return "Mail address"
-        case .phone:
-            return "Phone number"
-        case .telegram:
-            return "Telegram"
-        case .website:
-            return "Personal website"
-        }
-    }
     @objc dynamic var accessValue = ""
     @objc dynamic var accessCount = 0
     
@@ -37,7 +25,7 @@ class AccessWay: NSObject {
         self.accessValue = value
     }
     
-    func access() {
+    @objc func use() {
         accessCount += 1
     }
 }

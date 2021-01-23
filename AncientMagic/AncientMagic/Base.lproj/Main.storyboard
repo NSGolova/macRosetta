@@ -752,6 +752,9 @@
                                 <buttonCell key="cell" type="bevel" title="Add new" bezelStyle="regularSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Gck-at-WdG">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
                                 </buttonCell>
                                 <connections>
                                     <action selector="handleNew:" target="XfG-lQ-9wD" id="Yat-LY-SIk"/>
@@ -800,21 +803,19 @@
                                                             <rect key="frame" x="1" y="1" width="237" height="42"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="zoa-qp-1ON">
-                                                                    <rect key="frame" x="0.0" y="-6" width="237" height="23"/>
-                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="QhT-ba-7PV">
-                                                                        <font key="font" usesAppearanceFont="YES"/>
-                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RFb-aW-lsF">
+                                                                    <rect key="frame" x="0.0" y="2" width="190" height="16"/>
+                                                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="OgA-n3-hKe">
+                                                                        <font key="font" metaFont="system"/>
+                                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
                                                                     <connections>
-                                                                        <binding destination="ohz-UZ-t8u" name="value" keyPath="objectValue.surname" id="e7r-l2-lJu"/>
+                                                                        <binding destination="ohz-UZ-t8u" name="value" keyPath="objectValue.surname" id="DnX-OU-78N"/>
                                                                     </connections>
                                                                 </textField>
-                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d1t-zE-Yn2">
-                                                                    <rect key="frame" x="0.0" y="17" width="237" height="23"/>
-                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="d1t-zE-Yn2">
+                                                                    <rect key="frame" x="0.0" y="24" width="190" height="16"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="Zvt-Ab-Qhw">
                                                                         <font key="font" usesAppearanceFont="YES"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -842,10 +843,29 @@
                                                                         </binding>
                                                                     </connections>
                                                                 </box>
+                                                                <textField horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="a5F-N0-V0O">
+                                                                    <rect key="frame" x="194" y="13" width="37" height="16"/>
+                                                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="rsU-dm-hZ9">
+                                                                        <font key="font" metaFont="system"/>
+                                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                    <connections>
+                                                                        <binding destination="ohz-UZ-t8u" name="value" keyPath="objectValue.accessCount" id="zZz-w9-2DR"/>
+                                                                    </connections>
+                                                                </textField>
                                                             </subviews>
                                                             <constraints>
+                                                                <constraint firstItem="RFb-aW-lsF" firstAttribute="leading" secondItem="ohz-UZ-t8u" secondAttribute="leading" constant="2" id="A9S-HH-wxs"/>
                                                                 <constraint firstAttribute="trailing" secondItem="mSh-6e-bx2" secondAttribute="trailing" constant="8" id="E84-5E-v9b"/>
                                                                 <constraint firstItem="mSh-6e-bx2" firstAttribute="centerY" secondItem="ohz-UZ-t8u" secondAttribute="centerY" id="TWs-Y4-ydw"/>
+                                                                <constraint firstItem="a5F-N0-V0O" firstAttribute="leading" secondItem="d1t-zE-Yn2" secondAttribute="trailing" constant="8" symbolic="YES" id="aE3-rv-gwZ"/>
+                                                                <constraint firstItem="d1t-zE-Yn2" firstAttribute="top" secondItem="ohz-UZ-t8u" secondAttribute="top" constant="2" id="fmD-D3-ebf"/>
+                                                                <constraint firstItem="a5F-N0-V0O" firstAttribute="centerY" secondItem="ohz-UZ-t8u" secondAttribute="centerY" id="imQ-kZ-a8t"/>
+                                                                <constraint firstItem="d1t-zE-Yn2" firstAttribute="leading" secondItem="ohz-UZ-t8u" secondAttribute="leading" constant="2" id="oN9-iI-A1o"/>
+                                                                <constraint firstAttribute="bottom" secondItem="RFb-aW-lsF" secondAttribute="bottom" constant="2" id="qZO-Mb-E6k"/>
+                                                                <constraint firstItem="RFb-aW-lsF" firstAttribute="trailing" secondItem="d1t-zE-Yn2" secondAttribute="trailing" id="suM-hk-x0F"/>
+                                                                <constraint firstAttribute="trailing" secondItem="a5F-N0-V0O" secondAttribute="trailing" constant="8" id="z9C-at-wNp"/>
                                                             </constraints>
                                                             <connections>
                                                                 <outlet property="textField" destination="d1t-zE-Yn2" id="wVb-Pi-Nib"/>
@@ -983,7 +1003,11 @@
                                                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                             </textFieldCell>
                                                                             <connections>
-                                                                                <binding destination="6bH-nf-Uzt" name="value" keyPath="objectValue.name" id="aWs-Os-thd"/>
+                                                                                <binding destination="6bH-nf-Uzt" name="value" keyPath="objectValue.type" id="2Qw-eS-78E">
+                                                                                    <dictionary key="options">
+                                                                                        <string key="NSValueTransformerName">TypeToNameTransformer</string>
+                                                                                    </dictionary>
+                                                                                </binding>
                                                                             </connections>
                                                                         </textField>
                                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4is-oy-E1N">
@@ -1003,11 +1027,36 @@
                                                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                                 <font key="font" metaFont="system"/>
                                                                             </buttonCell>
+                                                                            <connections>
+                                                                                <binding destination="6bH-nf-Uzt" name="target" keyPath="objectValue" id="Qq9-hJ-hX4">
+                                                                                    <dictionary key="options">
+                                                                                        <string key="NSSelectorName">use</string>
+                                                                                    </dictionary>
+                                                                                </binding>
+                                                                                <binding destination="6bH-nf-Uzt" name="title" keyPath="objectValue.type" id="Rcm-4L-ixG">
+                                                                                    <dictionary key="options">
+                                                                                        <string key="NSValueTransformerName">TypeToButtonTitleTransformer</string>
+                                                                                    </dictionary>
+                                                                                </binding>
+                                                                            </connections>
                                                                         </button>
+                                                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rQ8-dt-wO8">
+                                                                            <rect key="frame" x="297" y="14" width="37" height="16"/>
+                                                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="jNV-ui-TU5">
+                                                                                <font key="font" metaFont="system"/>
+                                                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                            </textFieldCell>
+                                                                            <connections>
+                                                                                <binding destination="6bH-nf-Uzt" name="value" keyPath="objectValue.accessCount" id="DZm-S7-dHg"/>
+                                                                            </connections>
+                                                                        </textField>
                                                                     </subviews>
                                                                     <constraints>
                                                                         <constraint firstAttribute="trailing" secondItem="Wuf-FJ-rFd" secondAttribute="trailing" constant="16" id="Ii2-Sa-ray"/>
                                                                         <constraint firstItem="4is-oy-E1N" firstAttribute="centerY" secondItem="OIg-IP-krU" secondAttribute="centerY" id="QoY-E2-Qfj"/>
+                                                                        <constraint firstItem="rQ8-dt-wO8" firstAttribute="centerY" secondItem="6bH-nf-Uzt" secondAttribute="centerY" id="SpO-iG-SFa"/>
+                                                                        <constraint firstItem="Wuf-FJ-rFd" firstAttribute="leading" secondItem="rQ8-dt-wO8" secondAttribute="trailing" constant="8" id="WeX-Xp-yvt"/>
                                                                         <constraint firstItem="OIg-IP-krU" firstAttribute="leading" secondItem="6bH-nf-Uzt" secondAttribute="leading" constant="16" id="ctQ-Yp-wZ0"/>
                                                                         <constraint firstItem="Wuf-FJ-rFd" firstAttribute="centerY" secondItem="6bH-nf-Uzt" secondAttribute="centerY" id="fxl-f8-nxI"/>
                                                                         <constraint firstItem="OIg-IP-krU" firstAttribute="centerY" secondItem="6bH-nf-Uzt" secondAttribute="centerY" id="g3M-EL-LgB"/>
@@ -1063,21 +1112,55 @@
                                     </binding>
                                 </connections>
                             </customView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Gru-Dn-kA7">
+                                <rect key="frame" x="617" y="423" width="37" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="aV7-b1-D4X">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="XfG-lQ-9wD" name="displayPatternValue1" keyPath="list.onlineCount" id="L9V-zf-QFx">
+                                        <dictionary key="options">
+                                            <string key="NSDisplayPattern">%{value1}@ online</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="j4a-Ew-gqB">
+                                <rect key="frame" x="617" y="391" width="37" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="CGM-Uu-zrC">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="XfG-lQ-9wD" name="displayPatternValue1" keyPath="list.accessCount" id="yEw-ur-eNq">
+                                        <dictionary key="options">
+                                            <string key="NSDisplayPattern">Overall activity: %{value1}@</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="tCM-zI-czL" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="3rG-Xs-mKw"/>
                             <constraint firstItem="K9Z-Mx-iBP" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="30" id="46s-3g-OLJ"/>
                             <constraint firstItem="ce9-18-36g" firstAttribute="height" secondItem="5ER-2A-GUg" secondAttribute="height" id="4LX-Fr-DkF"/>
                             <constraint firstAttribute="bottom" secondItem="tCM-zI-czL" secondAttribute="bottom" id="5e5-dF-qUB"/>
+                            <constraint firstItem="j4a-Ew-gqB" firstAttribute="top" secondItem="Gru-Dn-kA7" secondAttribute="bottom" constant="16" id="7cV-RT-5Au"/>
                             <constraint firstItem="ce9-18-36g" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="12" id="8Q7-nC-RiD"/>
                             <constraint firstItem="YKU-WA-hgg" firstAttribute="top" secondItem="MG2-8B-JeT" secondAttribute="top" id="JGK-0V-R3y"/>
                             <constraint firstItem="5ER-2A-GUg" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="12" id="PxE-J2-WFP"/>
                             <constraint firstItem="YKU-WA-hgg" firstAttribute="leading" secondItem="tCM-zI-czL" secondAttribute="trailing" id="WWq-gC-3VW"/>
+                            <constraint firstAttribute="trailing" secondItem="j4a-Ew-gqB" secondAttribute="trailing" constant="16" id="XQh-CN-2sf"/>
                             <constraint firstAttribute="bottom" secondItem="YKU-WA-hgg" secondAttribute="bottom" id="biM-fh-9AF"/>
                             <constraint firstItem="ce9-18-36g" firstAttribute="top" secondItem="5ER-2A-GUg" secondAttribute="bottom" constant="12" id="fiV-4l-hib"/>
                             <constraint firstItem="5ER-2A-GUg" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="12" id="gmO-gx-j4d"/>
                             <constraint firstItem="K9Z-Mx-iBP" firstAttribute="leading" secondItem="5ER-2A-GUg" secondAttribute="trailing" constant="12" id="j4g-Gi-AOo"/>
                             <constraint firstItem="ce9-18-36g" firstAttribute="width" secondItem="5ER-2A-GUg" secondAttribute="width" id="lhg-TX-Is5"/>
+                            <constraint firstAttribute="trailing" secondItem="Gru-Dn-kA7" secondAttribute="trailing" constant="16" id="mrk-Cr-Ga5"/>
+                            <constraint firstItem="Gru-Dn-kA7" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="16" id="qbC-Mw-SXg"/>
                             <constraint firstAttribute="trailing" secondItem="YKU-WA-hgg" secondAttribute="trailing" id="rCr-yu-6JE"/>
                             <constraint firstItem="tCM-zI-czL" firstAttribute="top" secondItem="ce9-18-36g" secondAttribute="bottom" constant="8" symbolic="YES" id="s5A-Zs-VP5"/>
                             <constraint firstItem="YKU-WA-hgg" firstAttribute="top" secondItem="K9Z-Mx-iBP" secondAttribute="bottom" constant="21" id="ytw-bU-ANc"/>
@@ -1104,6 +1187,18 @@
                         </binding>
                     </connections>
                 </objectController>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="nac-2r-IRj">
+                    <rect key="frame" x="0.0" y="0.0" width="190" height="16"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="fmR-rS-lZn">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="ohz-UZ-t8u" name="value" keyPath="objectValue.name" id="TLJ-Ti-oqw"/>
+                    </connections>
+                </textField>
             </objects>
             <point key="canvasLocation" x="68" y="803.5"/>
         </scene>
