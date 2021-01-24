@@ -10,13 +10,13 @@ import Foundation
 class MyObject: NSObject {
     @objc dynamic var property = "test"
     
-    @objc dynamic var property1 = "test"
-    @objc dynamic var property2 = "test"
+    @objc dynamic var name = "test"
+    @objc dynamic var surname = "test"
     
-    @objc dynamic var property1and2: String { property1 + property2 }
+    @objc dynamic var fullname: String { name + " " + surname }
     
-    @objc class func keyPathsForValuesAffectingProperty1and2() -> Set<String> {
-        [#keyPath(property1), #keyPath(property2)]
+    @objc class func keyPathsForValuesAffectingFullname() -> Set<String> {
+        [#keyPath(name), #keyPath(surname)]
     }
 }
 

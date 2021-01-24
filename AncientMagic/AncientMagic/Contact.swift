@@ -9,9 +9,8 @@ import Foundation
 import KVOMagic
 
 class Contact: ArrayOwner {
-    
-    @objc dynamic var name = ""
-    @objc dynamic var surname = ""
+    @objc dynamic var name: String?
+    @objc dynamic var surname: String?
     
     @Computed2({ $0 + " " + $1 }, self, \.name, \.surname) @objc dynamic var fullname
     

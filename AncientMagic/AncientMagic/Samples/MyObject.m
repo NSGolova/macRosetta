@@ -9,12 +9,12 @@
 
 @implementation MyObject
 
-- (NSString *)property1and2 {
-    return [self.property1 stringByAppendingString:self.property2];
+- (NSString *)fullname {
+    return [self.name stringByAppendingFormat:@" %@", self.surname];
 }
 
-+ (NSSet<NSString *> *)keyPathsForValuesAffectingProperty1and2 {
-    return [NSSet setWithObjects:@"property1", @"property2", nil];
++ (NSSet<NSString *> *)keyPathsForValuesAffectingFullname {
+    return [NSSet setWithObjects:@"name", @"surname", nil];
 }
 
 @end

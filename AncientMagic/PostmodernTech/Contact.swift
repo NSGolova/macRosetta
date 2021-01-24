@@ -6,39 +6,40 @@
 //
 
 import Foundation
+import Combine
 
 class Contact: Equatable, Identifiable, Hashable, ObservableObject {
     @Published var name: String?
     @Published var surname: String?
-    
-    var fullname: String? {
-        guard let name = name,
-              let surname = surname else {
-            return nil
-        }
-        return name + " " + surname
-    }
-    
+    @Published var fullname: String?
     @Published var online = false
+    
+    var id = UUID().uuidString
+    
+    private var fullNameObserver: AnyCancellable?
     
     init(name: String, surname: String) {
         self.name = name
         self.surname = surname
         
+        fullNameObserver = Publishers.CombineLatest($name, $surname).sink { [weak self] in
+            self?.fullname = $0 + " " + $1
+        }
+ 
+        DispatchQueue.main.asyncAfter(deadline: .now() + Double(arc4random_uniform(200))) { [weak self] in
+            self?.toggleOnline()
+        }
+    }
+    
+    private func toggleOnline() {
+        online.toggle()
         DispatchQueue.main.asyncAfter(deadline: .now() + Double(arc4random_uniform(200))) { [weak self] in
             self?.toggleOnline()
         }
     }
     
     static func == (lhs: Contact, rhs: Contact) -> Bool {
-        lhs.fullname == rhs.fullname
-    }
-    
-    func toggleOnline() {
-        online.toggle()
-        DispatchQueue.main.asyncAfter(deadline: .now() + Double(arc4random_uniform(200))) { [weak self] in
-            self?.toggleOnline()
-        }
+        lhs.id == rhs.id
     }
     
     func hash(into hasher: inout Hasher) {

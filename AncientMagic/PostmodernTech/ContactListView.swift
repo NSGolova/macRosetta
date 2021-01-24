@@ -9,19 +9,8 @@ import SwiftUI
 
 struct ContactsListView: View {
     @ObservedObject var list = ContactsList()
-    @State var selectedContact = Set<Contact>()
     
-    @State private var name: String = "" {
-        didSet {
-            selectedContact.first?.name = name
-        }
-    }
-    @State private var surname: String = "" {
-        didSet {
-            selectedContact.first?.surname = surname
-        }
-    }
-    
+    @State private var selectedContact: Contact?
     @State private var newName: String = ""
     @State private var newSurname: String = ""
     
@@ -31,13 +20,20 @@ struct ContactsListView: View {
                 VStack {
                     TextField("name", text: $newName)
                     TextField("surname", text: $newSurname)
-                }.padding(.all).frame(width: 350.0)
+                }
+                .padding(.all)
+                .frame(width: 350.0)
                 
                 Button(action: {
-                       list.add(contact: Contact(name: newName, surname: newSurname))
+                    list.add(contact: Contact(name: newName, surname: newSurname))
+                    newName = ""
+                    newSurname = ""
                    }) {
                     Text("Add new")
-                }.padding(.leading).frame(width: 50.0)
+                }
+                .padding(.leading)
+                .frame(width: 50.0)
+                .disabled(newName.count == 0 || newSurname.count == 0)
                 Spacer()
             }
             HStack {
@@ -45,14 +41,11 @@ struct ContactsListView: View {
                     ContactView(contact: contact)
                 }
                 VStack {
-                    Text(selectedContact.first?.fullname ?? "")
-                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                        .multilineTextAlignment(.center)
-                    Form {
-                    TextField( selectedContact.first?.name ?? "", text: $name)
-                    TextField(selectedContact.first?.surname ?? "", text: $surname)
-                    
-                        
+                    if let contact = selectedContact {
+                        ContactDetailsView(contact: contact)
+                    } else {
+                        Text("Select contact")
+                            .frame(width: 350.0)
                     }
                 }
             }
@@ -60,7 +53,6 @@ struct ContactsListView: View {
         }
     }
 }
-
 
 struct ContactsListView_Previews: PreviewProvider {
     static var previews: some View {

@@ -36,6 +36,10 @@
 		B9FD2BC525BC3D81006A31AE /* AccessWays.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2BC425BC3D81006A31AE /* AccessWays.swift */; };
 		B9FD2BE325BC968D006A31AE /* KVOMagic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9FD2BD925BC967D006A31AE /* KVOMagic.framework */; };
 		B9FD2BE425BC968D006A31AE /* KVOMagic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9FD2BD925BC967D006A31AE /* KVOMagic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B9FD2BF725BD88D3006A31AE /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2BF625BD88D2006A31AE /* Operators.swift */; };
+		B9FD2C0E25BE19BA006A31AE /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2C0D25BE19BA006A31AE /* Operators.swift */; };
+		B9FD2C1625BE20D6006A31AE /* ContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2C1525BE20D5006A31AE /* ContactDetailsView.swift */; };
+		B9FD2C1E25BE22DC006A31AE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2C1D25BE22DC006A31AE /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +116,10 @@
 		B9FD2B5E25B87C4F006A31AE /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
 		B9FD2BC425BC3D81006A31AE /* AccessWays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessWays.swift; sourceTree = "<group>"; };
 		B9FD2BD325BC967D006A31AE /* KVOMagic.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KVOMagic.xcodeproj; path = ../../KVOMagic/KVOMagic/KVOMagic.xcodeproj; sourceTree = "<group>"; };
+		B9FD2BF625BD88D2006A31AE /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		B9FD2C0D25BE19BA006A31AE /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		B9FD2C1525BE20D5006A31AE /* ContactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsView.swift; sourceTree = "<group>"; };
+		B9FD2C1D25BE22DC006A31AE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,11 +189,12 @@
 				B9FD2A7925B5DA07006A31AE /* Contact.swift */,
 				B9FD2BC425BC3D81006A31AE /* AccessWays.swift */,
 				B9FD2AD625B810FA006A31AE /* Transformers.swift */,
+				B9FD2C0D25BE19BA006A31AE /* Operators.swift */,
+				B955F2DB25B57BA90096A1AB /* Samples */,
 				B955F29825B4A9750096A1AB /* Info.plist */,
 				B955F29925B4A9750096A1AB /* AncientMagic.entitlements */,
 				B955F2A025B4A9950096A1AB /* AncientMagic-Bridging-Header.h */,
 				B9FD2BD325BC967D006A31AE /* KVOMagic.xcodeproj */,
-				B955F2DB25B57BA90096A1AB /* Samples */,
 			);
 			path = AncientMagic;
 			sourceTree = "<group>";
@@ -233,8 +242,11 @@
 				B9FD2B3125B8745E006A31AE /* ContentView.swift */,
 				B9FD2B5E25B87C4F006A31AE /* ContactListView.swift */,
 				B9FD2B5025B878B0006A31AE /* ContactView.swift */,
+				B9FD2C1525BE20D5006A31AE /* ContactDetailsView.swift */,
 				B9FD2B4A25B87625006A31AE /* ContactList.swift */,
 				B9FD2B4425B87618006A31AE /* Contact.swift */,
+				B9FD2BF625BD88D2006A31AE /* Operators.swift */,
+				B9FD2C1D25BE22DC006A31AE /* Extensions.swift */,
 				B9FD2B3325B8745F006A31AE /* Assets.xcassets */,
 				B9FD2B3825B8745F006A31AE /* Main.storyboard */,
 				B9FD2B3B25B8745F006A31AE /* Info.plist */,
@@ -461,6 +473,7 @@
 				B955F29025B4A9730096A1AB /* AppDelegate.swift in Sources */,
 				B955F2A625B4AA840096A1AB /* MyObject.swift in Sources */,
 				B955F2A325B4A9950096A1AB /* MyObject.m in Sources */,
+				B9FD2C0E25BE19BA006A31AE /* Operators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,8 +499,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9FD2C1625BE20D6006A31AE /* ContactDetailsView.swift in Sources */,
+				B9FD2C1E25BE22DC006A31AE /* Extensions.swift in Sources */,
 				B9FD2B4B25B87625006A31AE /* ContactList.swift in Sources */,
 				B9FD2B4525B87618006A31AE /* Contact.swift in Sources */,
+				B9FD2BF725BD88D3006A31AE /* Operators.swift in Sources */,
 				B9FD2B3225B8745E006A31AE /* ContentView.swift in Sources */,
 				B9FD2B5F25B87C4F006A31AE /* ContactListView.swift in Sources */,
 				B9FD2B5125B878B0006A31AE /* ContactView.swift in Sources */,

@@ -13,9 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) MyObject *property;
 
-@property (nonatomic, strong) NSString *property1;
-@property (nonatomic, strong) NSString *property2;
-@property (nonatomic, strong, readonly) NSString *property1and2;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *surname;
+@property (nonatomic, strong, readonly) NSString *fullname;
 
 @end
 

@@ -685,7 +685,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Contacts" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="700" height="400"/>
@@ -758,17 +758,17 @@ DQ
                                 </buttonCell>
                                 <connections>
                                     <action selector="handleNew:" target="XfG-lQ-9wD" id="Yat-LY-SIk"/>
+                                    <binding destination="XfG-lQ-9wD" name="enabled" keyPath="name" id="pRC-Tk-K17">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSIsNotNil</string>
+                                        </dictionary>
+                                    </binding>
                                     <binding destination="XfG-lQ-9wD" name="enabled2" keyPath="surname" previousBinding="pRC-Tk-K17" id="jeU-br-LMR">
                                         <dictionary key="options">
                                             <integer key="NSMultipleValuesPlaceholder" value="-1"/>
                                             <integer key="NSNoSelectionPlaceholder" value="-1"/>
                                             <integer key="NSNotApplicablePlaceholder" value="-1"/>
                                             <integer key="NSNullPlaceholder" value="-1"/>
-                                            <string key="NSValueTransformerName">NSIsNotNil</string>
-                                        </dictionary>
-                                    </binding>
-                                    <binding destination="XfG-lQ-9wD" name="enabled" keyPath="name" id="pRC-Tk-K17">
-                                        <dictionary key="options">
                                             <string key="NSValueTransformerName">NSIsNotNil</string>
                                         </dictionary>
                                     </binding>
@@ -804,7 +804,7 @@ DQ
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RFb-aW-lsF">
-                                                                    <rect key="frame" x="0.0" y="2" width="190" height="16"/>
+                                                                    <rect key="frame" x="0.0" y="2" width="178" height="16"/>
                                                                     <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="OgA-n3-hKe">
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -815,7 +815,7 @@ DQ
                                                                     </connections>
                                                                 </textField>
                                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="d1t-zE-Yn2">
-                                                                    <rect key="frame" x="0.0" y="24" width="190" height="16"/>
+                                                                    <rect key="frame" x="0.0" y="24" width="178" height="16"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="Zvt-Ab-Qhw">
                                                                         <font key="font" usesAppearanceFont="YES"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -844,7 +844,7 @@ DQ
                                                                     </connections>
                                                                 </box>
                                                                 <textField horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="a5F-N0-V0O">
-                                                                    <rect key="frame" x="194" y="13" width="37" height="16"/>
+                                                                    <rect key="frame" x="182" y="13" width="37" height="16"/>
                                                                     <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="rsU-dm-hZ9">
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -865,7 +865,7 @@ DQ
                                                                 <constraint firstItem="d1t-zE-Yn2" firstAttribute="leading" secondItem="ohz-UZ-t8u" secondAttribute="leading" constant="2" id="oN9-iI-A1o"/>
                                                                 <constraint firstAttribute="bottom" secondItem="RFb-aW-lsF" secondAttribute="bottom" constant="2" id="qZO-Mb-E6k"/>
                                                                 <constraint firstItem="RFb-aW-lsF" firstAttribute="trailing" secondItem="d1t-zE-Yn2" secondAttribute="trailing" id="suM-hk-x0F"/>
-                                                                <constraint firstAttribute="trailing" secondItem="a5F-N0-V0O" secondAttribute="trailing" constant="8" id="z9C-at-wNp"/>
+                                                                <constraint firstAttribute="trailing" secondItem="a5F-N0-V0O" secondAttribute="trailing" constant="20" id="z9C-at-wNp"/>
                                                             </constraints>
                                                             <connections>
                                                                 <outlet property="textField" destination="d1t-zE-Yn2" id="wVb-Pi-Nib"/>
@@ -1187,18 +1187,6 @@ DQ
                         </binding>
                     </connections>
                 </objectController>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="nac-2r-IRj">
-                    <rect key="frame" x="0.0" y="0.0" width="190" height="16"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="fmR-rS-lZn">
-                        <font key="font" usesAppearanceFont="YES"/>
-                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                    <connections>
-                        <binding destination="ohz-UZ-t8u" name="value" keyPath="objectValue.name" id="TLJ-Ti-oqw"/>
-                    </connections>
-                </textField>
             </objects>
             <point key="canvasLocation" x="68" y="803.5"/>
         </scene>
