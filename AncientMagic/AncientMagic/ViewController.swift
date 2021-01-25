@@ -14,6 +14,15 @@ class ViewController: NSViewController {
     
     @objc dynamic let list = ContactsList()
     
+    @objc dynamic var wayTypes: [Int] {
+        let ways: [AccessWay.AccessType] = [.mail, .phone, .telegram, .website]
+        
+        return ways.map(\.rawValue)
+    }
+    
+    @objc dynamic var wayValue: String?
+    @objc dynamic var selectedWay = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,6 +54,22 @@ class ViewController: NSViewController {
         self.surname = nil
         
         list.add(contact: Contact(name: name, surname: surname))
+    }
+    
+    @IBAction func handleNewAccess(_ contact: Contact) {
+        guard let wayValue = wayValue,
+              let type = AccessWay.AccessType(rawValue: selectedWay) else { return }
+        
+        self.wayValue = nil
+        
+        contact.add(access: AccessWay(type: type, value: wayValue))
+    }
+    
+    @IBAction func deleteAccess(_ sender: NSButton) {
+        guard let tableCellView = sender.superview as? NSTableCellView,
+              let access = tableCellView.objectValue as? AccessWay else { return }
+        
+        list.contacts.first { $0.accesses.contains(access) }?.remove(access: access)
     }
 }
 

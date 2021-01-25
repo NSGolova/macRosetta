@@ -19,6 +19,8 @@ class Contact: ArrayOwner {
     
     @Computed({ $0.accesses.map(\.accessCount).reduce(0, +) }, self, .arrayKVO + #keyPath(accesses.accessCount)) @objc dynamic var accessCount
     
+    var id = UUID().uuidString
+    
     init(name: String, surname: String) {
         self.name = name
         self.surname = surname
@@ -29,12 +31,14 @@ class Contact: ArrayOwner {
         }
     }
     
+    @objc
     func add(access: AccessWay) {
         guard !accesses.contains(access) else { return }
         
         accesses.append(access)
     }
     
+    @objc
     func remove(access: AccessWay) {
         accesses.removeAll { $0 == access }
     }
@@ -44,5 +48,15 @@ class Contact: ArrayOwner {
         DispatchQueue.main.asyncAfter(deadline: .now() + Double(arc4random_uniform(200))) { [weak self] in
             self?.toggleOnline()
         }
+    }
+    
+    override func isEqual(_ object: Any?) -> Bool {
+        guard let other = object as? Contact else { return false }
+        
+        return self.id == other.id
+    }
+    
+    override var hash: Int {
+        return id.hashValue
     }
 }

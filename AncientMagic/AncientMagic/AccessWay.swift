@@ -1,5 +1,5 @@
 //
-//  AccessWays.swift
+//  AccessWay.swift
 //  AncientMagic
 //
 //  Created by Viktor Radulov on 1/23/21.

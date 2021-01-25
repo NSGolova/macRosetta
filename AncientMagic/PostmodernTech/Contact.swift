@@ -14,6 +14,10 @@ class Contact: Equatable, Identifiable, Hashable, ObservableObject {
     @Published var fullname: String?
     @Published var online = false
     
+    @Published var accessCount = 0
+    
+    @Published var accesses = [AccessWay]()
+    
     var id = UUID().uuidString
     
     private var fullNameObserver: AnyCancellable?
@@ -25,6 +29,8 @@ class Contact: Equatable, Identifiable, Hashable, ObservableObject {
         fullNameObserver = Publishers.CombineLatest($name, $surname).sink { [weak self] in
             self?.fullname = $0 + " " + $1
         }
+        
+//        Publishers.CombineLatest($accesses.acce)
  
         DispatchQueue.main.asyncAfter(deadline: .now() + Double(arc4random_uniform(200))) { [weak self] in
             self?.toggleOnline()

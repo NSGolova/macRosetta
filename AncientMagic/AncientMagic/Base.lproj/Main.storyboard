@@ -1022,7 +1022,7 @@ DQ
                                                                             </connections>
                                                                         </textField>
                                                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Wuf-FJ-rFd">
-                                                                            <rect key="frame" x="334" y="4" width="81" height="32"/>
+                                                                            <rect key="frame" x="310" y="4" width="81" height="32"/>
                                                                             <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ZGs-gj-QO7">
                                                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                                 <font key="font" metaFont="system"/>
@@ -1041,7 +1041,7 @@ DQ
                                                                             </connections>
                                                                         </button>
                                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rQ8-dt-wO8">
-                                                                            <rect key="frame" x="297" y="14" width="37" height="16"/>
+                                                                            <rect key="frame" x="273" y="14" width="37" height="16"/>
                                                                             <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="jNV-ui-TU5">
                                                                                 <font key="font" metaFont="system"/>
                                                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -1051,16 +1051,32 @@ DQ
                                                                                 <binding destination="6bH-nf-Uzt" name="value" keyPath="objectValue.accessCount" id="DZm-S7-dHg"/>
                                                                             </connections>
                                                                         </textField>
+                                                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MCs-K0-WUl">
+                                                                            <rect key="frame" x="393" y="8" width="28" height="28"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="28" id="3qT-36-bNf"/>
+                                                                                <constraint firstAttribute="width" constant="28" id="fW7-tl-tNj"/>
+                                                                            </constraints>
+                                                                            <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="RemoveIcon" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="QF7-Y6-tkI">
+                                                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                                <font key="font" metaFont="system"/>
+                                                                            </buttonCell>
+                                                                            <connections>
+                                                                                <action selector="deleteAccess:" target="XfG-lQ-9wD" id="tjV-E2-Smc"/>
+                                                                            </connections>
+                                                                        </button>
                                                                     </subviews>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="trailing" secondItem="Wuf-FJ-rFd" secondAttribute="trailing" constant="16" id="Ii2-Sa-ray"/>
+                                                                        <constraint firstItem="MCs-K0-WUl" firstAttribute="leading" secondItem="Wuf-FJ-rFd" secondAttribute="trailing" constant="8" symbolic="YES" id="N9A-g9-cyc"/>
                                                                         <constraint firstItem="4is-oy-E1N" firstAttribute="centerY" secondItem="OIg-IP-krU" secondAttribute="centerY" id="QoY-E2-Qfj"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="MCs-K0-WUl" secondAttribute="trailing" constant="4" id="R5j-fF-MaZ"/>
                                                                         <constraint firstItem="rQ8-dt-wO8" firstAttribute="centerY" secondItem="6bH-nf-Uzt" secondAttribute="centerY" id="SpO-iG-SFa"/>
                                                                         <constraint firstItem="Wuf-FJ-rFd" firstAttribute="leading" secondItem="rQ8-dt-wO8" secondAttribute="trailing" constant="8" id="WeX-Xp-yvt"/>
                                                                         <constraint firstItem="OIg-IP-krU" firstAttribute="leading" secondItem="6bH-nf-Uzt" secondAttribute="leading" constant="16" id="ctQ-Yp-wZ0"/>
                                                                         <constraint firstItem="Wuf-FJ-rFd" firstAttribute="centerY" secondItem="6bH-nf-Uzt" secondAttribute="centerY" id="fxl-f8-nxI"/>
                                                                         <constraint firstItem="OIg-IP-krU" firstAttribute="centerY" secondItem="6bH-nf-Uzt" secondAttribute="centerY" id="g3M-EL-LgB"/>
                                                                         <constraint firstItem="4is-oy-E1N" firstAttribute="leading" secondItem="OIg-IP-krU" secondAttribute="trailing" constant="16" id="kG8-89-vs4"/>
+                                                                        <constraint firstItem="MCs-K0-WUl" firstAttribute="centerY" secondItem="Wuf-FJ-rFd" secondAttribute="centerY" id="p4N-Ly-zb4"/>
                                                                     </constraints>
                                                                 </tableCellView>
                                                             </prototypeCellViews>
@@ -1085,6 +1101,100 @@ DQ
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableHeaderView>
                                     </scrollView>
+                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AMp-7Z-49k">
+                                        <rect key="frame" x="16" y="185" width="239" height="21"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" continuous="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="MOm-xV-bcs">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <connections>
+                                            <binding destination="XfG-lQ-9wD" name="value" keyPath="wayValue" id="ITf-EX-PGn">
+                                                <dictionary key="options">
+                                                    <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                </dictionary>
+                                            </binding>
+                                        </connections>
+                                    </textField>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UJO-kt-9MV">
+                                        <rect key="frame" x="353" y="175" width="65" height="32"/>
+                                        <buttonCell key="cell" type="push" title="Add" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Yb2-4j-UJJ">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <binding destination="VL3-Ea-R2J" name="argument" keyPath="content" id="BYm-uW-GDh">
+                                                <dictionary key="options">
+                                                    <string key="NSSelectorName">handleNewAccess:</string>
+                                                </dictionary>
+                                            </binding>
+                                            <binding destination="XfG-lQ-9wD" name="target" keyPath="self" previousBinding="BYm-uW-GDh" id="jLf-pY-HUX">
+                                                <dictionary key="options">
+                                                    <string key="NSSelectorName">handleNewAccess:</string>
+                                                </dictionary>
+                                            </binding>
+                                            <binding destination="XfG-lQ-9wD" name="enabled" keyPath="wayValue" id="eps-ME-nIr">
+                                                <dictionary key="options">
+                                                    <string key="NSValueTransformerName">NSIsNotNil</string>
+                                                </dictionary>
+                                            </binding>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wl9-9q-Nx0">
+                                        <rect key="frame" x="374" y="326" width="40" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="36" id="AAf-Rv-ZH0"/>
+                                            <constraint firstAttribute="height" constant="36" id="UJ8-el-fWo"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="RemoveIcon" imagePosition="only" alignment="center" borderStyle="border" inset="2" id="0ug-cJ-uZz">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <binding destination="VL3-Ea-R2J" name="argument" keyPath="content" id="VhO-F4-Cng">
+                                                <dictionary key="options">
+                                                    <string key="NSSelectorName">removeWithContact:</string>
+                                                </dictionary>
+                                            </binding>
+                                            <binding destination="XfG-lQ-9wD" name="target" keyPath="list" previousBinding="VhO-F4-Cng" id="IUR-p0-LNq">
+                                                <dictionary key="options">
+                                                    <string key="NSSelectorName">removeWithContact:</string>
+                                                </dictionary>
+                                            </binding>
+                                        </connections>
+                                    </button>
+                                    <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VSU-6K-TID">
+                                        <rect key="frame" x="269" y="179" width="77" height="25"/>
+                                        <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="SMM-f8-tYy" id="CPS-Y9-Opf">
+                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="menu"/>
+                                            <menu key="menu" id="Dea-Mj-vIM">
+                                                <items>
+                                                    <menuItem title="Item 1" state="on" id="SMM-f8-tYy"/>
+                                                    <menuItem title="Item 2" id="UHR-X7-tOw"/>
+                                                    <menuItem title="Item 3" id="5rb-zz-MZI"/>
+                                                </items>
+                                            </menu>
+                                        </popUpButtonCell>
+                                        <connections>
+                                            <binding destination="bdB-9a-W96" name="contentObjects" keyPath="arrangedObjects" previousBinding="SIU-07-mal" id="GQc-sO-8ak"/>
+                                            <binding destination="bdB-9a-W96" name="contentValues" keyPath="arrangedObjects" previousBinding="GQc-sO-8ak" id="HYv-l6-Ebl">
+                                                <dictionary key="options">
+                                                    <string key="NSValueTransformerName">TypeToNameTransformer</string>
+                                                </dictionary>
+                                            </binding>
+                                            <binding destination="bdB-9a-W96" name="content" keyPath="arrangedObjects" id="SIU-07-mal">
+                                                <dictionary key="options">
+                                                    <string key="NSValueTransformerName">TypeToNameTransformer</string>
+                                                </dictionary>
+                                            </binding>
+                                            <binding destination="XfG-lQ-9wD" name="selectedValue" keyPath="selectedWay" previousBinding="HYv-l6-Ebl" id="AnF-LI-eIs">
+                                                <dictionary key="options">
+                                                    <string key="NSValueTransformerName">TypeToNameTransformer</string>
+                                                </dictionary>
+                                            </binding>
+                                        </connections>
+                                    </popUpButton>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="wvX-Qe-nNp" firstAttribute="top" secondItem="YKU-WA-hgg" secondAttribute="top" constant="207" id="0wt-MA-4yW"/>
@@ -1092,15 +1202,24 @@ DQ
                                     <constraint firstAttribute="bottom" secondItem="wvX-Qe-nNp" secondAttribute="bottom" id="50c-HS-eWh"/>
                                     <constraint firstAttribute="trailing" secondItem="yxi-Ao-hV5" secondAttribute="trailing" constant="16" id="8C7-Lp-iA6"/>
                                     <constraint firstAttribute="trailing" secondItem="wvX-Qe-nNp" secondAttribute="trailing" id="CM9-fo-dMt"/>
+                                    <constraint firstAttribute="trailing" secondItem="UJO-kt-9MV" secondAttribute="trailing" constant="16" id="DP1-BX-w8R"/>
                                     <constraint firstItem="yxi-Ao-hV5" firstAttribute="top" secondItem="YKU-WA-hgg" secondAttribute="top" constant="8" id="FyZ-kE-XYG"/>
+                                    <constraint firstItem="VSU-6K-TID" firstAttribute="leading" secondItem="AMp-7Z-49k" secondAttribute="trailing" constant="16" id="Gva-bJ-UUk"/>
+                                    <constraint firstItem="wvX-Qe-nNp" firstAttribute="top" secondItem="UJO-kt-9MV" secondAttribute="bottom" constant="8" id="Kyw-zX-SJu"/>
                                     <constraint firstItem="hWx-ed-cF0" firstAttribute="centerY" secondItem="tDE-Zh-YJ8" secondAttribute="centerY" id="Mwa-eW-jvs"/>
+                                    <constraint firstItem="VSU-6K-TID" firstAttribute="centerY" secondItem="UJO-kt-9MV" secondAttribute="centerY" id="ScX-on-ACq"/>
+                                    <constraint firstItem="UJO-kt-9MV" firstAttribute="leading" secondItem="VSU-6K-TID" secondAttribute="trailing" constant="16" id="V4y-rq-57g"/>
                                     <constraint firstItem="6Y3-Zh-2GB" firstAttribute="centerY" secondItem="iBY-u1-xLl" secondAttribute="centerY" id="XmC-dV-Got"/>
+                                    <constraint firstItem="AMp-7Z-49k" firstAttribute="leading" secondItem="YKU-WA-hgg" secondAttribute="leading" constant="16" id="a9l-Lc-5rg"/>
                                     <constraint firstItem="yxi-Ao-hV5" firstAttribute="leading" secondItem="YKU-WA-hgg" secondAttribute="leading" constant="16" id="bCX-dF-QBP"/>
                                     <constraint firstItem="wvX-Qe-nNp" firstAttribute="leading" secondItem="YKU-WA-hgg" secondAttribute="leading" id="chd-HX-VhU"/>
                                     <constraint firstItem="tDE-Zh-YJ8" firstAttribute="top" secondItem="iBY-u1-xLl" secondAttribute="bottom" constant="20" id="ekP-E4-Fut"/>
+                                    <constraint firstAttribute="trailing" secondItem="wl9-9q-Nx0" secondAttribute="trailing" constant="16" id="gsq-hG-apT"/>
                                     <constraint firstItem="tDE-Zh-YJ8" firstAttribute="leading" secondItem="iBY-u1-xLl" secondAttribute="leading" id="jlb-Yn-4Gr"/>
                                     <constraint firstItem="iBY-u1-xLl" firstAttribute="leading" secondItem="YKU-WA-hgg" secondAttribute="leading" constant="20" symbolic="YES" id="m1W-we-37N"/>
                                     <constraint firstItem="hWx-ed-cF0" firstAttribute="leading" secondItem="6Y3-Zh-2GB" secondAttribute="leading" id="mI0-1n-L0W"/>
+                                    <constraint firstItem="wl9-9q-Nx0" firstAttribute="top" secondItem="YKU-WA-hgg" secondAttribute="top" constant="16" id="trb-2v-RVU"/>
+                                    <constraint firstItem="AMp-7Z-49k" firstAttribute="centerY" secondItem="VSU-6K-TID" secondAttribute="centerY" constant="-3" id="vZu-Ki-eOj"/>
                                     <constraint firstItem="hWx-ed-cF0" firstAttribute="trailing" secondItem="6Y3-Zh-2GB" secondAttribute="trailing" id="wz4-vZ-VvK"/>
                                     <constraint firstItem="iBY-u1-xLl" firstAttribute="top" secondItem="yxi-Ao-hV5" secondAttribute="bottom" constant="30" id="x05-eX-IRT"/>
                                 </constraints>
@@ -1187,8 +1306,16 @@ DQ
                         </binding>
                     </connections>
                 </objectController>
+                <arrayController id="bdB-9a-W96">
+                    <connections>
+                        <binding destination="XfG-lQ-9wD" name="contentArray" keyPath="wayTypes" id="xv2-JT-HsE"/>
+                    </connections>
+                </arrayController>
             </objects>
             <point key="canvasLocation" x="68" y="803.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="RemoveIcon" width="8" height="14"/>
+    </resources>
 </document>
