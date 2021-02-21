@@ -17,6 +17,7 @@
 		B955F2CE25B57B730096A1AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B955F2CD25B57B730096A1AB /* ViewController.swift */; };
 		B955F2D025B57B740096A1AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B955F2CF25B57B740096A1AB /* Assets.xcassets */; };
 		B955F2D325B57B740096A1AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B955F2D125B57B740096A1AB /* Main.storyboard */; };
+		B9DB7FEA25BEE6030040F5DB /* AccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DB7FE925BEE6030040F5DB /* AccessView.swift */; };
 		B9FD2A7625B5D9E9006A31AE /* ContactsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2A7525B5D9E9006A31AE /* ContactsList.swift */; };
 		B9FD2A7A25B5DA07006A31AE /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2A7925B5DA07006A31AE /* Contact.swift */; };
 		B9FD2AD725B810FA006A31AE /* Transformers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2AD625B810FA006A31AE /* Transformers.swift */; };
@@ -93,6 +94,7 @@
 		B955F2D225B57B740096A1AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B955F2D425B57B740096A1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B955F2D525B57B750096A1AB /* MuggleTech.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MuggleTech.entitlements; sourceTree = "<group>"; };
+		B9DB7FE925BEE6030040F5DB /* AccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessView.swift; sourceTree = "<group>"; };
 		B9FD2A7525B5D9E9006A31AE /* ContactsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsList.swift; sourceTree = "<group>"; };
 		B9FD2A7925B5DA07006A31AE /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		B9FD2AD625B810FA006A31AE /* Transformers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transformers.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 				B9FD2B5E25B87C4F006A31AE /* ContactListView.swift */,
 				B9FD2B5025B878B0006A31AE /* ContactView.swift */,
 				B9FD2C1525BE20D5006A31AE /* ContactDetailsView.swift */,
+				B9DB7FE925BEE6030040F5DB /* AccessView.swift */,
 				B9FD2B4A25B87625006A31AE /* ContactList.swift */,
 				B9FD2B4425B87618006A31AE /* Contact.swift */,
 				B9FD2C3025BE2634006A31AE /* AccessWay.swift */,
@@ -468,6 +471,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B955F2A325B4A9950096A1AB /* MyObject.m in Sources */,
 				B9FD2AD725B810FA006A31AE /* Transformers.swift in Sources */,
 				B9FD2BC525BC3D81006A31AE /* AccessWay.swift in Sources */,
 				B9FD2A7A25B5DA07006A31AE /* Contact.swift in Sources */,
@@ -475,7 +479,6 @@
 				B955F29225B4A9730096A1AB /* ViewController.swift in Sources */,
 				B955F29025B4A9730096A1AB /* AppDelegate.swift in Sources */,
 				B955F2A625B4AA840096A1AB /* MyObject.swift in Sources */,
-				B955F2A325B4A9950096A1AB /* MyObject.m in Sources */,
 				B9FD2C0E25BE19BA006A31AE /* Operators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,6 +507,7 @@
 			files = (
 				B9FD2C1625BE20D6006A31AE /* ContactDetailsView.swift in Sources */,
 				B9FD2C1E25BE22DC006A31AE /* Extensions.swift in Sources */,
+				B9DB7FEA25BEE6030040F5DB /* AccessView.swift in Sources */,
 				B9FD2B4B25B87625006A31AE /* ContactList.swift in Sources */,
 				B9FD2B4525B87618006A31AE /* Contact.swift in Sources */,
 				B9FD2BF725BD88D3006A31AE /* Operators.swift in Sources */,

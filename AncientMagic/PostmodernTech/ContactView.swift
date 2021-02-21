@@ -20,6 +20,7 @@ struct ContactView: View {
                     .multilineTextAlignment(.leading)
             }
             Spacer()
+            Text("\(contact.accessCount)")
             Circle()
                 .frame(width: 8.0, height: 8.0).foregroundColor(contact.online ? .green : .red)
         }

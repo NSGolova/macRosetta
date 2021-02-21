@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct ContactsListView: View {
-    @ObservedObject var list = ContactsList()
+    
+    @ObservedObject var list: ContactsList
     
     @State private var selectedContact: Contact?
-    @State private var newName: String = ""
-    @State private var newSurname: String = ""
+    @State private var newName = ""
+    @State private var newSurname = ""
     
     var body: some View {
         VStack {
@@ -35,6 +36,12 @@ struct ContactsListView: View {
                 .frame(width: 50.0)
                 .disabled(newName.count == 0 || newSurname.count == 0)
                 Spacer()
+                VStack(alignment: .trailing) {
+                    Text("\(list.onlineCount) online")
+                        .padding(.bottom)
+                    Text("Overal activity: \(list.accessCount)")
+                }
+                .padding(.trailing)
             }
             HStack {
                 List(list.contacts, id: \.self, selection: $selectedContact) { contact in
@@ -42,7 +49,9 @@ struct ContactsListView: View {
                 }
                 VStack {
                     if let contact = selectedContact {
-                        ContactDetailsView(contact: contact)
+                        ContactDetailsView(contact: contact) {
+                            list.remove(contact: contact)
+                        }
                     } else {
                         Text("Select contact")
                             .frame(width: 350.0)

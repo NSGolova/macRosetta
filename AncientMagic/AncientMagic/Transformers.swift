@@ -52,32 +52,6 @@ class TypeToNameTransformer: ValueTransformer {
     }
 }
 
-//@objc(TypeToListTransformer)
-//class TypeToListTransformer: ValueTransformer {
-//    open override class func transformedValueClass() -> AnyClass { NSArray.self }
-//    open override class func allowsReverseTransformation() -> Bool { true }
-//    
-//    private var namesMap: [AccessWay.AccessType: String] = [
-//        .mail: "Mail address",
-//        .phone: "Phone number",
-//        .telegram: "Telegram",
-//        .website: "Personal website"
-//    ]
-//
-//    open override func transformedValue(_ value: Any?) -> Any? {
-//        guard let rawInt = (value as? NSNumber)?.intValue,
-//              let type = AccessWay.AccessType(rawValue: rawInt) else { return "" }
-//        
-//        return namesMap[type]
-//    }
-//    
-//    override func reverseTransformedValue(_ value: Any?) -> Any? {
-//        guard let name = value as? String else { return nil }
-//        
-//        return namesMap.first { $0.value == name }?.key
-//    }
-//}
-
 @objc(TypeToButtonTitleTransformer)
 class TypeToButtonTitleTransformer: ValueTransformer {
     open override class func transformedValueClass() -> AnyClass { NSString.self }
