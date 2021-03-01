@@ -6,25 +6,13 @@
 //
 
 import Foundation
-import Combine
-import SwiftUI
+import KVOMagic
 
-class ContactsList: ObservableObject {
+class ContactsList: PureWrapperOwner, ObservableObject {
     @ObservableArray var contacts = [Contact]()
     
-    @Published var onlineCount = 0
-    @Published var accessCount = 0
-    
-    private var contactsObserver: AnyCancellable?
-    
-    init() {
-        contactsObserver = $contacts.objectWillChange.sink { [weak self] _ in
-            guard let self = self else { return }
-
-            self.accessCount = self.contacts.map(\.accessCount).reduce(0, +)
-            self.onlineCount = self.contacts.filter(\.online).count
-        }
-    }
+    @FromArray({ $0.filter(\.online).count }, \ContactsList.$contacts) var onlineCount
+    @FromArray({ $0.map(\.accessCount).reduce(0, +) }, \ContactsList.$contacts) var accessCount
     
     func add(contact: Contact) {
         guard !contacts.contains(contact) else { return }

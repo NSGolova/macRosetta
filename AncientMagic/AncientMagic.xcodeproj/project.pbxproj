@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B944C54825ED858700319031 /* KVOMagic in Frameworks */ = {isa = PBXBuildFile; productRef = B944C54725ED858700319031 /* KVOMagic */; };
+		B944C54C25ED859200319031 /* KVOMagic in Frameworks */ = {isa = PBXBuildFile; productRef = B944C54B25ED859200319031 /* KVOMagic */; };
 		B955F29025B4A9730096A1AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B955F28F25B4A9730096A1AB /* AppDelegate.swift */; };
 		B955F29225B4A9730096A1AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B955F29125B4A9730096A1AB /* ViewController.swift */; };
 		B955F29425B4A9750096A1AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B955F29325B4A9750096A1AB /* Assets.xcassets */; };
@@ -35,8 +37,6 @@
 		B9FD2B5125B878B0006A31AE /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2B5025B878B0006A31AE /* ContactView.swift */; };
 		B9FD2B5F25B87C4F006A31AE /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2B5E25B87C4F006A31AE /* ContactListView.swift */; };
 		B9FD2BC525BC3D81006A31AE /* AccessWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2BC425BC3D81006A31AE /* AccessWay.swift */; };
-		B9FD2BE325BC968D006A31AE /* KVOMagic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9FD2BD925BC967D006A31AE /* KVOMagic.framework */; };
-		B9FD2BE425BC968D006A31AE /* KVOMagic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9FD2BD925BC967D006A31AE /* KVOMagic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B9FD2BF725BD88D3006A31AE /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2BF625BD88D2006A31AE /* Operators.swift */; };
 		B9FD2C0E25BE19BA006A31AE /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2C0D25BE19BA006A31AE /* Operators.swift */; };
 		B9FD2C1625BE20D6006A31AE /* ContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2C1525BE20D5006A31AE /* ContactDetailsView.swift */; };
@@ -44,31 +44,23 @@
 		B9FD2C3125BE2634006A31AE /* AccessWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD2C3025BE2634006A31AE /* AccessWay.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		B9FD2BD825BC967D006A31AE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B9FD2BD325BC967D006A31AE /* KVOMagic.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B9FD2A8D25B70EBE006A31AE;
-			remoteInfo = KVOMagic;
-		};
-		B9FD2BDA25BC967D006A31AE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B9FD2BD325BC967D006A31AE /* KVOMagic.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B9FD2A9625B70EBE006A31AE;
-			remoteInfo = KVOMagicTests;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
+		B944C52625EB04DA00319031 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B9FD2BE525BC968D006A31AE /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B9FD2BE425BC968D006A31AE /* KVOMagic.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,7 +110,6 @@
 		B9FD2B5025B878B0006A31AE /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		B9FD2B5E25B87C4F006A31AE /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
 		B9FD2BC425BC3D81006A31AE /* AccessWay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessWay.swift; sourceTree = "<group>"; };
-		B9FD2BD325BC967D006A31AE /* KVOMagic.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KVOMagic.xcodeproj; path = ../../KVOMagic/KVOMagic/KVOMagic.xcodeproj; sourceTree = "<group>"; };
 		B9FD2BF625BD88D2006A31AE /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		B9FD2C0D25BE19BA006A31AE /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		B9FD2C1525BE20D5006A31AE /* ContactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsView.swift; sourceTree = "<group>"; };
@@ -131,7 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9FD2BE325BC968D006A31AE /* KVOMagic.framework in Frameworks */,
+				B944C54825ED858700319031 /* KVOMagic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B944C54C25ED859200319031 /* KVOMagic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +190,6 @@
 				B955F29825B4A9750096A1AB /* Info.plist */,
 				B955F29925B4A9750096A1AB /* AncientMagic.entitlements */,
 				B955F2A025B4A9950096A1AB /* AncientMagic-Bridging-Header.h */,
-				B9FD2BD325BC967D006A31AE /* KVOMagic.xcodeproj */,
 			);
 			path = AncientMagic;
 			sourceTree = "<group>";
@@ -270,15 +261,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B9FD2BD425BC967D006A31AE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B9FD2BD925BC967D006A31AE /* KVOMagic.framework */,
-				B9FD2BDB25BC967D006A31AE /* KVOMagicTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		B9FD2BE225BC968D006A31AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +285,9 @@
 			dependencies = (
 			);
 			name = AncientMagic;
+			packageProductDependencies = (
+				B944C54725ED858700319031 /* KVOMagic */,
+			);
 			productName = AncientMagic;
 			productReference = B955F28C25B4A9730096A1AB /* AncientMagic.app */;
 			productType = "com.apple.product-type.application";
@@ -348,12 +333,16 @@
 				B9FD2B2925B8745E006A31AE /* Sources */,
 				B9FD2B2A25B8745E006A31AE /* Frameworks */,
 				B9FD2B2B25B8745E006A31AE /* Resources */,
+				B944C52625EB04DA00319031 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = PostmodernTech;
+			packageProductDependencies = (
+				B944C54B25ED859200319031 /* KVOMagic */,
+			);
 			productName = PostmodernTech;
 			productReference = B9FD2B2D25B8745E006A31AE /* PostmodernTech.app */;
 			productType = "com.apple.product-type.application";
@@ -365,7 +354,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1230;
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					B955F28B25B4A9730096A1AB = {
 						CreatedOnToolsVersion = 12.3;
@@ -391,14 +380,11 @@
 				Base,
 			);
 			mainGroup = B955F28325B4A9730096A1AB;
+			packageReferences = (
+				B944C54625ED858700319031 /* XCRemoteSwiftPackageReference "KVOMagic" */,
+			);
 			productRefGroup = B955F28D25B4A9730096A1AB /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = B9FD2BD425BC967D006A31AE /* Products */;
-					ProjectRef = B9FD2BD325BC967D006A31AE /* KVOMagic.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				B955F28B25B4A9730096A1AB /* AncientMagic */,
@@ -408,23 +394,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		B9FD2BD925BC967D006A31AE /* KVOMagic.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = KVOMagic.framework;
-			remoteRef = B9FD2BD825BC967D006A31AE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B9FD2BDB25BC967D006A31AE /* KVOMagicTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = KVOMagicTests.xctest;
-			remoteRef = B9FD2BDA25BC967D006A31AE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B955F28A25B4A9730096A1AB /* Resources */ = {
@@ -681,7 +650,7 @@
 				CODE_SIGN_ENTITLEMENTS = AncientMagic/AncientMagic.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 235885SBVV;
+				DEVELOPMENT_TEAM = KMC5NA9YG7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = AncientMagic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -705,7 +674,7 @@
 				CODE_SIGN_ENTITLEMENTS = AncientMagic/AncientMagic.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 235885SBVV;
+				DEVELOPMENT_TEAM = KMC5NA9YG7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = AncientMagic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -727,7 +696,7 @@
 				CODE_SIGN_ENTITLEMENTS = MagleTech/MagleTech.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 235885SBVV;
+				DEVELOPMENT_TEAM = KMC5NA9YG7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = MagleTech/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -748,7 +717,7 @@
 				CODE_SIGN_ENTITLEMENTS = MagleTech/MagleTech.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 235885SBVV;
+				DEVELOPMENT_TEAM = KMC5NA9YG7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = MagleTech/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -900,6 +869,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B944C54625ED858700319031 /* XCRemoteSwiftPackageReference "KVOMagic" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/radulov/KVOMagic.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B944C54725ED858700319031 /* KVOMagic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B944C54625ED858700319031 /* XCRemoteSwiftPackageReference "KVOMagic" */;
+			productName = KVOMagic;
+		};
+		B944C54B25ED859200319031 /* KVOMagic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B944C54625ED858700319031 /* XCRemoteSwiftPackageReference "KVOMagic" */;
+			productName = KVOMagic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B955F28425B4A9730096A1AB /* Project object */;
 }
